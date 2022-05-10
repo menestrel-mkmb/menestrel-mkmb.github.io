@@ -1,0 +1,139 @@
+/* files import */
+@import url(_style.css);
+
+/* vars */
+
+:root {
+    --color-almost-black: #3E2E45;
+    --color-almost-white: #D1F1FF;
+    --color-dark-blue: #004663;
+    --color-neutral-yellow: #FFF4C4;
+    --color-light-pink: #F3D6FF;
+
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-major-mono-display: 'Major Mono Display', monospace;
+    --font-pt-mono: 'PT Mono', monospace;
+}
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=PT+Mono&display=swap');
+
+/* base styles */
+
+main {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 80%;
+}
+
+footer {
+    padding: 4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    padding: 1rem 4rem;
+}
+
+/* themes */
+
+.white-theme {
+    background-color: var(--color-almost-white);
+    color: var(--color-dark-blue);
+}
+
+.white-theme~.dark-bg {
+    color: var(--color-almost-black);
+}
+
+.white-theme.dark-bg {
+    background-color: var(--color-dark-blue);
+    color: var(--color-almost-white);
+}
+
+body.white-theme {
+    background-color: var(--color-almost-white);
+}
+
+main.white-theme {
+    background-color: var(--color-neutral-yellow);
+}
+
+.dark-theme {
+    background-color: var(--color-almost-black);
+    color: var(--color-almost-white);
+}
+
+body.dark-theme {
+    background-color: var(--color-dark-blue);
+}
+
+header.dark-theme, footer.dark-theme  {
+    background-color: black;
+}
+
+/* titles */
+
+.title, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-major-mono-display);
+    margin: 1rem 0;
+}
+
+h1 span {
+    display: inline;
+}
+
+/* lists */
+
+ul, ol {
+    margin: 1rem 0;
+}
+
+li {
+    list-style: none;
+    text-indent: 1rem;
+}
+
+/* content-type */
+
+.in-progress {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.coming-soon {
+    font-weight: 200;
+}
+
+.coming-soon::after {
+    content: ' (coming soon)';
+}
+.in-progress::after {
+    content: ' (in progress)';
+}
+
+.dark-theme .coming-soon+.in-progress {
+    color: var(--color-almost-white);
+}
+
+.white-theme .coming-soon+.in-progress {
+    color: var(--color-almost-black);
+}
+
+/* elements */
+
+.button {
+    content: 'CT';
+    color: var(--color-almost-white);
+    border: var(--color-almost-white) 2px solid;
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: none;
+    background-color: var(--color-almost-white);
+    color: var(--color-almost-black);
+}

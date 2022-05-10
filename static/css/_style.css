@@ -1,0 +1,99 @@
+                        /* INDEX */
+
+/* NAV */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ul__index {
+    display: flex;
+    flex-direction: row;
+}
+
+.li__item-index {
+    padding: 0 2rem;
+}
+
+        /* MAIN */
+
+/* Resume */
+.div__resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    margin-bottom: 2px solid red;
+    
+    margin: 0 auto;
+    width: 80%;
+}
+
+.div__author {
+    width: 80%;
+}
+
+.img__author {
+    width: 20%;
+    border-radius: 100%;
+}
+.span__long-description {
+    width: 80%;
+}
+
+
+/* SKILLS */
+
+.div__skills-all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.div__skills-all div {
+    /* border: 2px dashed var(--color-dark-blue); */
+    padding: 2rem;
+}
+
+.div__skills-all title {
+    background: var(--color-dark-blue);
+    color: var(--color-neutral-yellow);
+}
+
+/* Lang Skills */
+.div__languages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .div__skills {
+        width: 50%;
+    }
+
+    .div__others {
+        width: 20%;
+    }
+
+    .div__tools {
+        width: 20%;
+    }
+
+    .div__languages {
+        width: 80%;
+    }
+}
