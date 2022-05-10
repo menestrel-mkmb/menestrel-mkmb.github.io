@@ -31,25 +31,30 @@ header nav {
 .div__resume {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    
-    margin: 6rem auto;
-    width: 80%;
+    flex-wrap: nowrap;
+
+    margin: 6rem 0 auto;
 }
 
-.div__author {
-    width: 80%;
-    height: fit-content;
+figure {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin: 0 4rem;
+
     text-align: center;
 }
 
 .img__author {
-    max-width: 50%;
-    height: auto;
     border-radius: 100%;
+
+    max-width: 300px;
+    height: auto;
 }
 .span__long-description {
+    padding: 0 4rem;
     width: 80%;
 }
 
@@ -88,7 +93,26 @@ header nav {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+.lang__generic, .lang__web, .lang__automation {
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__title, .right-bg, .left-bg {
+        display: none;
+    }
+
+    .nav__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .div__resume {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
     .div__skills {
         width: 30%;
     }
