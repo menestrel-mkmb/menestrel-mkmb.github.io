@@ -41,10 +41,12 @@ header nav {
 .div__author {
     width: 80%;
     height: fit-content;
+    text-align: center;
 }
 
 .img__author {
-    width: 20%;
+    max-width: 50%;
+    height: auto;
     border-radius: 100%;
 }
 .span__long-description {
