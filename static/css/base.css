@@ -20,6 +20,16 @@
 
 /* base styles */
 
+header {
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    padding: 0 1rem;
+}
+
 main {
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -32,10 +42,6 @@ footer {
 
 .hidden {
     display: none;
-}
-
-.title {
-    padding: 1rem 4rem;
 }
 
 /* themes */
@@ -94,7 +100,6 @@ ul, ol {
 
 li {
     list-style: none;
-    text-indent: 1rem;
 }
 
 /* content-type */
