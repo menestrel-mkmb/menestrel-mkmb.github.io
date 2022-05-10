@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="static/css/reset.css">
-    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/base.css">
 
     <title>Michael Kevin | Portfolio</title>
 </head>
@@ -16,11 +16,11 @@
         <nav class="nav__menu">
             <h3 class="cv__index hidden">Índice</h3>
             <ul class="ul__index">
-                <li class="li__item-index"><a href="#cv__description">Descrição</a></li>
-                <li class="li__item-index"><a href="#cv__skills">Habilidades</a></li>
-                <li class="li__item-index"><a href="#cv__languages">Linguagens</a></li>
-                <li class="li__item-index"><a href="#cv__tools">Ferramentas</a></li>
-                <li class="li__item-index"><button class="button theme" onclick="toggleTheme">DT</button></li>
+                <li class="li__item-index"><a href="#desc">Descrição</a></li>
+                <li class="li__item-index"><a href="#skills">Habilidades</a></li>
+                <li class="li__item-index"><a href="#tools">Ferramentas</a></li>
+                <li class="li__item-index"><a href="#languages">Linguagens</a></li>
+                <li class="li__item-index"><button class="button theme" onclick="toggleTheme">CT</button></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,7 @@
             <div class="div__resume">
                 <!-- Author -->
                 <div class="div__author">
-                    <!-- <h2><a href="https://www.linkedin.com/in/michael-kevin/" target="_blank"><figure> -->
+                    <h2><a href="https://www.linkedin.com/in/michael-kevin/" target="_blank"><figure>
                         <img class="img__author" src="../static/img/author.jpeg" alt="Foto de Michael Kevin">
                         <figcaption>
                             Engenheiro, técnico e programador.
@@ -39,7 +39,7 @@
             
             
                 <!-- Long Description -->
-                <span class="span__long-description">
+                <span class="span__long-description" id="desc">
                     <h3 class="cv__description title">Descrição</h3>
                     <p class="cv__description-text">Um tocantinense, nascido em Colinas do Tocantins (TO/BR), é curioso por natureza e apaixonado pela ciência. Um ser biopsicossocial INTP-A cujo adora tecnologias que permitem criar/destruir coisas.</p>
                     <p class="cv__description-text work"> Tenho background em desenvolvimento de produto embarcado, passando por impressão 3D até desenvolvimento web, todas com o mesmo ideal: criativade para gerar tecnologia que impacte pessoas.</p>
@@ -52,7 +52,7 @@
 
             <div class="div__skills-all">
                 <!-- Skills -->
-                <div class="skills">
+                <div class="skills" id="softskills">
                     <h3 class="cv__skills title">Habilidades</h3>
                     <ul class="ul__softskills">
                         <li class="li__softskills"><strong>Liderança</strong></li>
@@ -63,8 +63,8 @@
                 </div>
 
                 <!-- Tools -->
-                <div class="tools">
-                    <h3 class="cv__tools">Ferramentas</h3>
+                <div class="tools" id="tools">
+                    <h3 class="cv__tools title">Ferramentas</h3>
                     <ul class="ul__tools">
                         <li class="li__tools">Git</li>
                         <li class="li__tools">Github</li>
@@ -83,7 +83,7 @@
                 
                 <!-- Others -->
                 <div class="others">
-                    <h3 class="cv__others">Outros</h3>
+                    <h3 class="cv__others title">Outros</h3>
                     <ul>
                         <li>Agile</li>
                         <li>SCRUM</li>
@@ -92,7 +92,7 @@
                     </ul>
                 </div>
 
-                <div class="div__languages">
+                <div class="div__languages" id="languages">
                     <div class="lang__generic">
                         <h3 class="cv__languages title">Linguagens</h3>
                         <ul class="ul__languages">
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="lang__web">
-                        <h4>Específicas para Web</h4>
+                        <h4 class="title">Específicas para Web</h4>
                         <ul class="ul__web-languages">
                             <li class="li__web-lang">Django</li>
                             <li class="li__web-lang">Flutter</li>
@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="lang__automation">
-                        <h4>Específicas para Automação</h4>
+                        <h4 class="title">Específicas para Automação</h4>
                         <ul class="ul__aut-languages">
                             <li class="li__aut-lang clp">Ladder</li>
                             <li class="li__aut-lang clp">FDB</li>
