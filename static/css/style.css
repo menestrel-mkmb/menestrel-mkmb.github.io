@@ -38,21 +38,25 @@ header nav {
         /* MAIN */
 
 /* Resume */
+.div__cv-content {
+    margin: 6rem 0 auto;
+}
+
 .div__resume {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+    gap: 3rem;
 
-    margin: 6rem 0 auto;
+    margin: 0 2rem;
 }
 
 figure {
     align-items: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
-
-    margin: 0 4rem;
+    gap: 1rem;
 
     text-align: center;
 }
@@ -63,11 +67,6 @@ figure {
     max-width: 300px;
     height: auto;
 }
-.span__long-description {
-    padding: 0 4rem;
-    width: 80%;
-}
-
 
 /* SKILLS */
 
@@ -96,7 +95,7 @@ figure {
     width: 100%;
 }
 
-.lang__generic, .lang__web, .lang__automation {
+.lang__generic, .lang__web, .lang__eng {
     width: 30%;
 }
 
