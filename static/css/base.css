@@ -28,6 +28,10 @@ nav {
     padding: 0 1rem;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 .div__main {
     display: flex;
     flex-direction: row;
@@ -37,7 +41,6 @@ nav {
 main {
     margin: 0 auto;
     padding: 2rem 1rem;
-    width: 80%;
 
     line-height: 2rem;
 }
