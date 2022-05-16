@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR CYPRESS TEST REQUIRED TO SUPRESS THE ATOMIC METHODOLOGY -->
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Lessons Learned | Michael Kevin</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+    <header class="header__sect nav" id="cabecalho">
+        <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+        <h1 class="title__header title" id="titulo">Minha Jornada na Trybe</h1>
+    </header>
+    <main class="main__sect content hero">
+        <section class="author__sect container parent">
+            <a href="https://www.linkedin.com/in/michael-kevin/" target="_blank" rel="noopener noreferrer" class="fig child">
+                <figure class="author__fig figure parent">
+                    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+                    <img src="./assets/img/author.jpg" alt="Michael Kevin portrait" class="author__img img child" id="minha_foto">
+                    <figcaption class="author_figcap figcaption title child">Michael Kevin</figcaption>
+                </figure>
+            </a>
+            <nav class="index__nav index child">
+                <a href="#licoes_aprendidas" class="index__item item item_1">Lições aprendidas</a>
+                <a href="#licoes_a_aprender" class="index__item item item_2">Lições a aprender</a>
+                <a href="#caminho_aprendizado" class="index__item item item_3">Meu aprendizado</a>
+                <a href="#filosofia" class="index__item item item_4">Filosofia de buteco</a>
+            </nav>
+        </section>
+
+        <div class="box__div parent">
+            <div class="lessons__div left child lado-esquerdo">
+                <!-- LESSONS LEARNED -->
+                <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, CLASS WITHOUT BEM METHODOLOGY -->
+                <section class="ls-le__sect container lado-esquerdo">
+                    <h2 class="ls-le__title title">Lições aprendidas</h2>
+                    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+                    <ol class="ls-le__ol" id="licoes_aprendidas">
+                        <li class="ls-le__items item item_1">Organizar o tempo</li>
+                        <li class="ls-le__items item item_2">Fazer um pouco todo dia</li>
+                        <li class="ls-le__items item item_3">Estruturas com HTML</li>
+                        <li class="ls-le__items item item_4">Estilização com CSS</li>
+                        <li class="ls-le__items item item_5">Semântica com HTML</li>
+                        <li class="ls-le__items item item_6">Links com HTML</li>
+                        <li class="ls-le__items item item_7">Mídias com HTML</li>
+                        <li class="ls-le__items item item_8">Posicionamento com CSS</li>
+                        <li class="ls-le__items item item_9">Repositório init</li>
+                        <li class="ls-le__items item item_10">Repositório flow -> do pull ao push</li>
+                    </ol>
+                </section>
+        
+                <!-- LESSONS TO LEARN -->
+                <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, CLASS WITHOUT BEM METHODOLOGY -->
+                <section class="ls-t-le__sect container lado-esquerdo">
+                    <h2 class="ls-t-le__title title">Lições a aprender</h2>
+                    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+                    <ul class="ls-t-le__ol" id="licoes_a_aprender">
+                        <li class="ls-t-le__items item item_1">Partials HTML</li>
+                        <li class="ls-t-le__items item item_2">Flexbox</li>
+                        <li class="ls-t-le__items item item_3">Os get n set com JS</li>
+                        <li class="ls-t-le__items item item_4">Regular expressions com JS</li>
+                        <li class="ls-t-le__items item item_5">Grid e suas magias</li>
+                        <li class="ls-t-le__items item item_6">Variáveis CSS</li>
+                        <li class="ls-t-le__items item item_7">Metodologias de códigos</li>
+                        <li class="ls-t-le__items item item_8">Não passar raiva com commit errado</li>
+                        <li class="ls-t-le__items item item_9">Sempre conferir diretório raiz</li>
+                        <li class="ls-t-le__items item item_10">Como controlar a fome de aprender tudo</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="aside__div right child lado-direito">
+                <!-- ARTICLE -->
+                <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, CLASS WITHOUT BEM METHODOLOGY -->
+                <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+                <article class="about__art container lado-direito" id="caminho_aprendizado">
+                    <h2 class="l-path__title title">Meu Aprendizado</h2>
+                    <p class="art__text text">A jornada de aprendizado é sempre dura e requer constante dedicação. Ainda mais no cenário digital da era da informação. O caminho é turbulento, e cabe ao dev o grande dever de entender como criar, organizar, abstrair, gerenciar, pesquisar, revisar, consertar e solidificar um conteúdo discreto em uma obra de arte composta 70% de café e 30% de bugs removidos em PRs pequenos.</p>
+                </article>
+
+                <!-- ASIDE TEXT -->
+                <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, CLASS WITHOUT BEM METHODOLOGY -->
+                <aside class="l-path__aside container sidecontainer lado-direito" id="filosofia">
+                    <h3 class="side__title title">Filosofia de buteco</h3>
+                    <p class="l-path__text text">A arte de codar é transformar café em ódio e commit.<br>O merge nunca é pleno, mata o branch e fast-foward.</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- PROPOSITAL_BAD_BEHAVIOR: FOR PROJECTS REQUIREMENTS, ID EXISTS -->
+    <footer class="footer__sect" id="rodape">
+        <table>
+            <tr>
+                <td>
+                    <p class="copyright text">
+                        Todos os direitos® reservados. Página de apresentação e do projeto 01 da Trybe©.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    
+</body>
+</html>
