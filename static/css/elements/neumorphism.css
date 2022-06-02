@@ -1,0 +1,158 @@
+:root {
+  --neum-border-radius: 20px;
+  --neum-bg-color: #4f4f4f;
+  --neum-bg-2-color: #5e5e5e;
+  --neum-grad-dg: 145deg;
+
+  --neum-blur-size: 40px;
+  --neum-solid-size: 12px;
+  --neum-solid-size-neg: -12px;
+  --neum-light-color-border: #999999;
+  --neum-dark-color-border: #333333;
+
+  --neum-linear-bg: var(--neum-bg-color);
+  --neum-linear-grad-bg: linear-gradient(
+    var(--neum-grad-dg) var(--neum-bg-color) var(--neum-bg-2-color)
+  );
+
+  --neum-light-left-top-out: var(--neum-solid-size) var(--neum-solid-size)
+      var(--neum-blur-size) var(--neum-light-color-border),
+    var(--neum-solid-size-neg) var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-dark-color-border);
+  --neum-light-left-top-in: inset var(--neum-solid-size) var(--neum-solid-size)
+      var(--neum-blur-size) var(--neum-light-color-border),
+    inset var(--neum-solid-size-neg) var(--neum-solid-size-neg)
+      var(--neum-blur-size) var(--neum-dark-color-border);
+
+  --neum-light-right-top-out: var(--neum-solid-size-neg) var(--neum-solid-size)
+      var(--neum-blur-size) var(--neum-light-color-border),
+    var(--neum-solid-size) var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-dark-color-border);
+  --neum-light-right-top-in: inset var(--neum-solid-size-neg)
+      var(--neum-solid-size) var(--neum-blur-size)
+      var(--neum-light-color-border),
+    inset var(--neum-solid-size) var(--neum-solid-size-neg)
+      var(--neum-blur-size) var(--neum-dark-color-border);
+
+  --neum-light-right-bottom-out: var(--neum-solid-size-neg)
+      var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-light-color-border),
+    var(--neum-solid-size) var(--neum-solid-size) var(--neum-blur-size)
+      var(--neum-dark-color-border);
+  --neum-light-right-bottom-in: inset var(--neum-solid-size-neg)
+      var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-light-color-border),
+    inset var(--neum-solid-size) var(--neum-solid-size) var(--neum-blur-size)
+      var(--neum-dark-color-border);
+
+  --neum-light-left-bottom-out: var(--neum-solid-size)
+      var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-light-color-border),
+    var(--neum-solid-size-neg) var(--neum-solid-size) var(--neum-blur-size)
+      var(--neum-dark-color-border);
+  --neum-light-left-bottom-in: inset var(--neum-solid-size)
+      var(--neum-solid-size-neg) var(--neum-blur-size)
+      var(--neum-light-color-border),
+    inset var(--neum-solid-size-neg) var(--neum-solid-size)
+      var(--neum-blur-size) var(--neum-dark-color-border);
+}
+
+/* left-top */
+.neumorphism-left-top-outter {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-top-out);
+}
+
+.neumorphism-left-top-outter-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-top-out);
+}
+
+.neumorphism-left-top-inner {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-top-in);
+}
+
+.neumorphism-left-top-inner-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-top-in);
+}
+
+/* rigth-top */
+.neumorphism-rigth-top-outter {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-top-out);
+}
+
+.neumorphism-rigth-top-outter-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-top-out);
+}
+
+.neumorphism-rigth-top-inner {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-top-in);
+}
+
+.neumorphism-rigth-top-inner-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-top-in);
+}
+
+/* left-bottom */
+.neumorphism-left-bottom-outter {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-bottom-out);
+}
+
+.neumorphism-left-bottom-outter-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-bottom-out);
+}
+
+.neumorphism-left-bottom-inner {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-bottom-in);
+}
+
+.neumorphism-left-bottom-inner-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-bottom-in);
+}
+
+/* rigth-bottom */
+.neumorphism-rigth-bottom-outter {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-bottom-out);
+}
+
+.neumorphism-rigth-bottom-outter-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-bottom-out);
+}
+
+.neumorphism-rigth-bottom-inner {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-grad-bg);
+  box-shadow: var(--neum-light-left-bottom-in);
+}
+
+.neumorphism-rigth-bottom-inner-solid {
+  border-radius: var(--neum-border-radius);
+  background: var(--neum-linear-bg);
+  box-shadow: var(--neum-light-left-bottom-in);
+}
